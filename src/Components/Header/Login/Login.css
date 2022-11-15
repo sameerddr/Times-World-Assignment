@@ -84,3 +84,35 @@ input {
     color: gray;
     margin: 10px 0px 10px 70px;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-image {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 500px;
+        right: 220px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 990px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+    .login-image {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 500px;
+        right: 400px;
+        position: fixed;
+    }
+}

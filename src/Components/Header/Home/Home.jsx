@@ -29,7 +29,6 @@ function Home({ set }) {
     <>
       <div className="main">
         <div className="data1">
-          <h1> Welcome to the Data Center</h1>
           <button onClick={handlelogout} className="logout">
             Log Out
           </button>
