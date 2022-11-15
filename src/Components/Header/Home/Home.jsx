@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import "./Home.css";
+import CountryCard from "./CountryCard";
 
 function Home({ set }) {
   const navigate = useNavigate();
@@ -33,20 +34,8 @@ function Home({ set }) {
             Log Out
           </button>
         </div>
-        {data?.map((item) => (
-          <div className="data" key={item.name}>
-            <div className="container">
-              <img
-                src={item.flag}
-                alt="Error-Loading-Image"
-                className="image"
-              />
-              <div className="detail">
-                <h6>{item.name}</h6>
-                <h5>{item.region}</h5>
-              </div>
-            </div>
-          </div>
+        {data?.map(({ name, flag, region }) => (
+          <CountryCard name={name} flag={flag} region={region} />
         ))}
       </div>
     </>
