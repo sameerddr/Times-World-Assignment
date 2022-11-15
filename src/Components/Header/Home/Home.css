@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.data {
+    display: inline-block;
+}
+
+.container {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 250px;
+    margin: 20px;
+}
+
+.image {
+    width: 80px;
+    height: 30px;
+    margin: 4px;
+}
+
+.detail {
+    padding: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+.data1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 100px 0px 0px;
+}
+
+.logout {
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 40px;
+    cursor: pointer;
+}
+
+.logout h1 {
+    font-family: "Times New Roman", Times, serif;
+}
